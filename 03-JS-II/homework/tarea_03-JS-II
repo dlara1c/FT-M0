@@ -1,0 +1,11 @@
+* `for`
+es una estructura de control que nos permite realizar un ciclo o una determinada tarea repetitiva el numero de veces que sea necesario.
+o hasta que se cumpla la condicion que debe detener su ejecucion.
+* `&&`
+es un operador logico que indica que ambas condiciones deben de cumplirse.
+
+, `||`,
+es un operador logico que nos es util para realizar dos o mas comparaciones, significa "OR" o "O" o sea que una de las condiciones debe cumplirse.
+
+ `!`
+ este simbolo indica diferente, o sea que nos dara el resultado opuesto al existente donde lo coloquemos.
