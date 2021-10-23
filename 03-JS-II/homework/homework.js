@@ -139,21 +139,23 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if(numero %3 === 0){
+  
+  if(numero %3 === 0 && numero %5 === 0 ) {
+    return "fizzbuzz";   
+  }
+  else if(numero %3 === 0){
     return"fizz";
   }
   else if(numero %5 === 0){
     return"buzz";
   }
-  
-  else if(numero %3 === 0 && numero %5 === 0 ) {
-    return "fizzbuzz";   
-  }else {
+  else {
     return numero;
   }
   
 
 }
+
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
@@ -162,18 +164,20 @@ function operadoresLogicos(num1, num2, num3) {
   //-Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //-0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
-  if(num1 == 0 || num2 == 0 || num3 == 0){
+  
+  if(num1 < 0 || num2 <0 || num3 < 0) {
+    return "Hay negativos";
+  }
+  else if(num1 == 0 || num2 == 0 || num3 == 0){
     return "Error";
   }
-  else if(num1 > num2 && num1 > num3 && num1 > 0) {
+  else if(num1 > 0 && num1 > num2 && num1 > num3) {
     return "Número 1 es mayor y positivo";
-  }
-  else if(num1 < 0 || num2 <0 || num3 < 0) {
-    return "Hay negativos";
   }
   else if(num3 > num1 && num3 > num2){
     return num3+1;
-  }else {
+  }
+  else {
     return false;
   }
 
@@ -186,7 +190,7 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
 
-  var NumVecesDividido = 0;
+  //var NumVecesDividido = 0;
   
   if (numero<2){
     return false;
@@ -194,19 +198,31 @@ function esPrimo(numero) {
   if (numero ===2){
     return true;
   }
-
-  for(i = 2; i < numero; i++){
-    if(numero % i ===0){
-      NumVecesDividido=NumVecesDividido+1;
-    }
+// los numeros primos no se pueden dividir entre 2 asi que si lo divido entre 2 y queda residuo indica que es un numero primo
+  if(numero % 2 !=0){
+    return true;
+  }else {
+   return false;
   }
 
-  if(NumVecesDividido > 2){
+
+  /*for(i = 2; i < numero; i++){
+    if(numero % i != 0){
+    //  NumVecesDividido=NumVecesDividido+1;
+    return true;
+    }else{
+      return false;
+    }
+  }*/
+
+  
+
+  /*if(NumVecesDividido > 2){
     return true;
   }
   else {
     return false;
-  }
+  }*/
 
 
 }
