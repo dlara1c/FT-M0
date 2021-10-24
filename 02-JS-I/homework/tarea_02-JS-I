@@ -1,0 +1,16 @@
+	* Variables
+es un espacio de memoria que creamos en los programas para almacenar valores.
+
+	* Strings
+es un tipo de dato, representan cadenas de texto.
+
+	* Funciones (argumentos, `return`)
+    una funcion es un fragmento de codigo donde damos las instrucciones que debe ejecutar el programa.
+
+    los argumentos son los parametros o datos que puede recibir la funcion y el return es lo que reggresa la funcion despues de realizar las tareas que se le programaron.
+
+	* Declaraciones `if`
+    son estructuras de control y sirven para dirigir o decidir que instrucciones se deben de ejecutar en base a cierta condicion
+	
+    * Valores booleanos (`true`, `false`)
+    es un valor de verdad que sirve para representar si algo es verdadero o falso
